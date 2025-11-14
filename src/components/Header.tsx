@@ -18,7 +18,7 @@ export function Header() {
         </a>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         <div className="flex  bg-[#F3F5F6]">
 
             <input
