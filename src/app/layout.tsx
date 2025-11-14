@@ -1,4 +1,12 @@
+import { Header } from "../components/Header";
 import "./globals.css";
+import {Saira} from "next/font/google";
+
+const saira = Saira({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-saira",
+});
 
 
 export default function RootLayout({
@@ -9,8 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={saira.className}
       >
+        <Header/>
         {children}
       </body>
     </html>
